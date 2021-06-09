@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.tuda.stg.openjml</groupId>
+    <artifactId>OpenJMLCore</artifactId>
+    <version>0.16.0</version>
+
+    <packaging>pom</packaging>
+
+    <modules>
+		<module>OpenJDK</module>
+        <module>OpenJML</module>
+    </modules>
+
+
+
+    <properties>
+        <!-- This property will be set by the Maven Dependency plugin -->
+        <!-- <annotatedJdk>${org.checkerframework:jdk8:jar}</annotatedJdk>-->
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <java.version>11</java.version>
+    </properties>
+
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                    </configuration>
+                </plugin> 
+			</plugins>              
+        </pluginManagement>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>    
+
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>

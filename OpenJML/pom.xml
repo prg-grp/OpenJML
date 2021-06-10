@@ -22,7 +22,9 @@
                         <arg>--add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED</arg>
                         <arg>--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED</arg>
                         <arg>--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED</arg>
+                        <arg>--add-exports=jdk.compiler/com.sun.tools.javac.jvm=ALL-UNNAMED</arg>
                         <arg>--patch-module=jdk.compiler=src</arg>
+                        <arg>--patch-module=jdk.compiler.ext=src</arg>
                     </compilerArgs>
                 </configuration>
             </plugin>
